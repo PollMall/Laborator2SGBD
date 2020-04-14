@@ -28,270 +28,144 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.showButton = new System.Windows.Forms.Button();
-            this.addButton = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.numeSezonTxtBox = new System.Windows.Forms.TextBox();
-            this.nrSezonTxtBox = new System.Windows.Forms.TextBox();
-            this.nrEpisoadeSezonTxtBox = new System.Windows.Forms.TextBox();
-            this.descriereSezonTxtBox = new System.Windows.Forms.TextBox();
-            this.addBtn = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.gridViewParent = new System.Windows.Forms.DataGridView();
+            this.showParent = new System.Windows.Forms.Button();
+            this.gridViewChild = new System.Windows.Forms.DataGridView();
+            this.deleteChild = new System.Windows.Forms.Button();
+            this.updateChild = new System.Windows.Forms.Button();
+            this.addChild = new System.Windows.Forms.Button();
+            this.labelChild = new System.Windows.Forms.Label();
+            this.labelParent = new System.Windows.Forms.Label();
+            this.panelChild = new System.Windows.Forms.Panel();
+            this.connectBtn = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewParent)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewChild)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // gridViewParent
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 41);
-            this.dataGridView1.MultiSelect = false;
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(450, 245);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.gridViewParent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridViewParent.Location = new System.Drawing.Point(12, 40);
+            this.gridViewParent.MultiSelect = false;
+            this.gridViewParent.Name = "gridViewParent";
+            this.gridViewParent.ReadOnly = true;
+            this.gridViewParent.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gridViewParent.Size = new System.Drawing.Size(450, 292);
+            this.gridViewParent.TabIndex = 0;
+            this.gridViewParent.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // showButton
+            // showParent
             // 
-            this.showButton.Location = new System.Drawing.Point(257, 310);
-            this.showButton.Name = "showButton";
-            this.showButton.Size = new System.Drawing.Size(75, 23);
-            this.showButton.TabIndex = 1;
-            this.showButton.Text = "Afisare";
-            this.showButton.UseVisualStyleBackColor = true;
-            this.showButton.Click += new System.EventHandler(this.button1_Click);
+            this.showParent.Location = new System.Drawing.Point(12, 351);
+            this.showParent.Name = "showParent";
+            this.showParent.Size = new System.Drawing.Size(113, 38);
+            this.showParent.TabIndex = 1;
+            this.showParent.Text = "Afisare";
+            this.showParent.UseVisualStyleBackColor = true;
+            this.showParent.Visible = false;
+            this.showParent.Click += new System.EventHandler(this.button1_Click);
             // 
-            // addButton
+            // gridViewChild
             // 
-            this.addButton.Location = new System.Drawing.Point(257, 354);
-            this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(75, 23);
-            this.addButton.TabIndex = 2;
-            this.addButton.Text = "Adaugare";
-            this.addButton.UseVisualStyleBackColor = true;
-            this.addButton.Click += new System.EventHandler(this.addButton_Click);
+            this.gridViewChild.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridViewChild.Location = new System.Drawing.Point(517, 40);
+            this.gridViewChild.MultiSelect = false;
+            this.gridViewChild.Name = "gridViewChild";
+            this.gridViewChild.ReadOnly = true;
+            this.gridViewChild.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gridViewChild.Size = new System.Drawing.Size(513, 245);
+            this.gridViewChild.TabIndex = 12;
+            this.gridViewChild.Visible = false;
+            this.gridViewChild.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick_1);
             // 
-            // textBox1
+            // deleteChild
             // 
-            this.textBox1.Location = new System.Drawing.Point(59, 307);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(146, 20);
-            this.textBox1.TabIndex = 3;
+            this.deleteChild.Location = new System.Drawing.Point(903, 309);
+            this.deleteChild.Name = "deleteChild";
+            this.deleteChild.Size = new System.Drawing.Size(75, 23);
+            this.deleteChild.TabIndex = 15;
+            this.deleteChild.Text = "Delete";
+            this.deleteChild.UseVisualStyleBackColor = true;
+            this.deleteChild.Visible = false;
+            this.deleteChild.Click += new System.EventHandler(this.button1_Click_2);
             // 
-            // textBox2
+            // updateChild
             // 
-            this.textBox2.Location = new System.Drawing.Point(105, 338);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 4;
+            this.updateChild.Location = new System.Drawing.Point(903, 359);
+            this.updateChild.Name = "updateChild";
+            this.updateChild.Size = new System.Drawing.Size(75, 23);
+            this.updateChild.TabIndex = 16;
+            this.updateChild.Text = "Update";
+            this.updateChild.UseVisualStyleBackColor = true;
+            this.updateChild.Visible = false;
+            this.updateChild.Click += new System.EventHandler(this.button2_Click);
             // 
-            // label1
+            // addChild
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 310);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 13);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Nume:";
+            this.addChild.Location = new System.Drawing.Point(903, 406);
+            this.addChild.Name = "addChild";
+            this.addChild.Size = new System.Drawing.Size(75, 23);
+            this.addChild.TabIndex = 26;
+            this.addChild.Text = "Add";
+            this.addChild.UseVisualStyleBackColor = true;
+            this.addChild.Visible = false;
+            this.addChild.Click += new System.EventHandler(this.addBtn_Click);
             // 
-            // label2
+            // labelChild
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 341);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 13);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Categorie varsta:";
+            this.labelChild.AutoSize = true;
+            this.labelChild.Location = new System.Drawing.Point(514, 9);
+            this.labelChild.Name = "labelChild";
+            this.labelChild.Size = new System.Drawing.Size(0, 13);
+            this.labelChild.TabIndex = 28;
             // 
-            // label3
+            // labelParent
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(15, 376);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 13);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Numar sezoane:";
+            this.labelParent.AutoSize = true;
+            this.labelParent.Location = new System.Drawing.Point(9, 9);
+            this.labelParent.Name = "labelParent";
+            this.labelParent.Size = new System.Drawing.Size(0, 13);
+            this.labelParent.TabIndex = 29;
+            this.labelParent.Visible = false;
             // 
-            // textBox3
+            // panelChild
             // 
-            this.textBox3.Location = new System.Drawing.Point(105, 373);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 9;
+            this.panelChild.Location = new System.Drawing.Point(618, 295);
+            this.panelChild.Name = "panelChild";
+            this.panelChild.Size = new System.Drawing.Size(229, 239);
+            this.panelChild.TabIndex = 30;
+            this.panelChild.Visible = false;
             // 
-            // dataGridView2
+            // connectBtn
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(517, 41);
-            this.dataGridView2.MultiSelect = false;
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView2.Size = new System.Drawing.Size(513, 245);
-            this.dataGridView2.TabIndex = 12;
-            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick_1);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 12);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(39, 13);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Seriale";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(514, 12);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 13);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "Sezoane";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(849, 304);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Delete";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_2);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(849, 354);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "Update";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(527, 303);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(36, 13);
-            this.label6.TabIndex = 17;
-            this.label6.Text = "nume:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(527, 337);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(50, 13);
-            this.label7.TabIndex = 18;
-            this.label7.Text = "nr sezon:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(527, 372);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(65, 13);
-            this.label8.TabIndex = 19;
-            this.label8.Text = "nr episoade:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(527, 401);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(53, 13);
-            this.label9.TabIndex = 20;
-            this.label9.Text = "descriere:";
-            // 
-            // numeSezonTxtBox
-            // 
-            this.numeSezonTxtBox.Location = new System.Drawing.Point(590, 303);
-            this.numeSezonTxtBox.Name = "numeSezonTxtBox";
-            this.numeSezonTxtBox.Size = new System.Drawing.Size(171, 20);
-            this.numeSezonTxtBox.TabIndex = 21;
-            // 
-            // nrSezonTxtBox
-            // 
-            this.nrSezonTxtBox.Location = new System.Drawing.Point(590, 336);
-            this.nrSezonTxtBox.Name = "nrSezonTxtBox";
-            this.nrSezonTxtBox.Size = new System.Drawing.Size(171, 20);
-            this.nrSezonTxtBox.TabIndex = 22;
-            // 
-            // nrEpisoadeSezonTxtBox
-            // 
-            this.nrEpisoadeSezonTxtBox.Location = new System.Drawing.Point(590, 367);
-            this.nrEpisoadeSezonTxtBox.Name = "nrEpisoadeSezonTxtBox";
-            this.nrEpisoadeSezonTxtBox.Size = new System.Drawing.Size(171, 20);
-            this.nrEpisoadeSezonTxtBox.TabIndex = 23;
-            // 
-            // descriereSezonTxtBox
-            // 
-            this.descriereSezonTxtBox.Location = new System.Drawing.Point(590, 398);
-            this.descriereSezonTxtBox.Name = "descriereSezonTxtBox";
-            this.descriereSezonTxtBox.Size = new System.Drawing.Size(171, 20);
-            this.descriereSezonTxtBox.TabIndex = 25;
-            // 
-            // addBtn
-            // 
-            this.addBtn.Location = new System.Drawing.Point(849, 401);
-            this.addBtn.Name = "addBtn";
-            this.addBtn.Size = new System.Drawing.Size(75, 23);
-            this.addBtn.TabIndex = 26;
-            this.addBtn.Text = "Add";
-            this.addBtn.UseVisualStyleBackColor = true;
-            this.addBtn.Click += new System.EventHandler(this.addBtn_Click);
+            this.connectBtn.Location = new System.Drawing.Point(15, 462);
+            this.connectBtn.Name = "connectBtn";
+            this.connectBtn.Size = new System.Drawing.Size(113, 52);
+            this.connectBtn.TabIndex = 31;
+            this.connectBtn.Text = "Connect";
+            this.connectBtn.UseVisualStyleBackColor = true;
+            this.connectBtn.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1042, 546);
-            this.Controls.Add(this.addBtn);
-            this.Controls.Add(this.descriereSezonTxtBox);
-            this.Controls.Add(this.nrEpisoadeSezonTxtBox);
-            this.Controls.Add(this.nrSezonTxtBox);
-            this.Controls.Add(this.numeSezonTxtBox);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.addButton);
-            this.Controls.Add(this.showButton);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.connectBtn);
+            this.Controls.Add(this.panelChild);
+            this.Controls.Add(this.labelParent);
+            this.Controls.Add(this.labelChild);
+            this.Controls.Add(this.addChild);
+            this.Controls.Add(this.updateChild);
+            this.Controls.Add(this.deleteChild);
+            this.Controls.Add(this.gridViewChild);
+            this.Controls.Add(this.showParent);
+            this.Controls.Add(this.gridViewParent);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewParent)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewChild)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -299,29 +173,16 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button showButton;
-        private System.Windows.Forms.Button addButton;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox numeSezonTxtBox;
-        private System.Windows.Forms.TextBox nrSezonTxtBox;
-        private System.Windows.Forms.TextBox nrEpisoadeSezonTxtBox;
-        private System.Windows.Forms.TextBox descriereSezonTxtBox;
-        private System.Windows.Forms.Button addBtn;
+        private System.Windows.Forms.DataGridView gridViewParent;
+        private System.Windows.Forms.Button showParent;
+        private System.Windows.Forms.DataGridView gridViewChild;
+        private System.Windows.Forms.Button deleteChild;
+        private System.Windows.Forms.Button updateChild;
+        private System.Windows.Forms.Button addChild;
+        private System.Windows.Forms.Label labelChild;
+        private System.Windows.Forms.Label labelParent;
+        private System.Windows.Forms.Panel panelChild;
+        private System.Windows.Forms.Button connectBtn;
     }
 }
 
