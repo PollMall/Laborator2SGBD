@@ -1,0 +1,9 @@
+C:\MATERII\SEM_2\SGBD\Lab1SGBD\bin\Debug\Lab1SGBD.exe.config
+C:\MATERII\SEM_2\SGBD\Lab1SGBD\bin\Debug\Lab1SGBD.exe
+C:\MATERII\SEM_2\SGBD\Lab1SGBD\bin\Debug\Lab1SGBD.pdb
+C:\MATERII\SEM_2\SGBD\Lab1SGBD\obj\Debug\Lab1SGBD.csprojAssemblyReference.cache
+C:\MATERII\SEM_2\SGBD\Lab1SGBD\obj\Debug\Lab1SGBD.Properties.Resources.resources
+C:\MATERII\SEM_2\SGBD\Lab1SGBD\obj\Debug\Lab1SGBD.csproj.GenerateResource.cache
+C:\MATERII\SEM_2\SGBD\Lab1SGBD\obj\Debug\Lab1SGBD.exe
+C:\MATERII\SEM_2\SGBD\Lab1SGBD\obj\Debug\Lab1SGBD.pdb
+C:\MATERII\SEM_2\SGBD\Lab1SGBD\obj\Debug\Lab1SGBD.Form1.resources
